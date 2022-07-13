@@ -14,16 +14,47 @@ public:
     QLCDNumber* lcdNumber = nullptr;
     QLCDNumber* lcdNumber_2 = nullptr;
 public slots:
-    void click1(){lcdNumber_2->display(1);};
-    void click2(){lcdNumber_2->display(2);};
-    void click3(){lcdNumber_2->display(3);};
-    void click4(){lcdNumber_2->display(4);};
-    void click5(){lcdNumber_2->display(5);};
-    void click6(){lcdNumber_2->display(6);};
-    void click7(){lcdNumber_2->display(7);};
-    void click8(){lcdNumber_2->display(8);};
-    void click9(){lcdNumber_2->display(9);};
-    void click0(){lcdNumber_2->display(0);};
+    void click1(){
+        ch = 1;
+        lcdNumber_2->display(ch);
+    };
+    void click2(){
+        ch = 2;
+        lcdNumber_2->display(ch);
+    };
+    void click3(){
+        ch = 3;
+        lcdNumber_2->display(ch);
+    };
+    void click4(){
+        ch = 4;
+        lcdNumber_2->display(ch);
+    };
+    void click5(){
+        ch = 5;
+        lcdNumber_2->display(ch);
+    };
+    void click6(){
+        ch = 6;
+        lcdNumber_2->display(ch);
+    };
+    void click7()
+    {
+        ch = 7;
+        lcdNumber_2->display(ch);
+    };
+    void click8(){
+        ch = 8;
+        lcdNumber_2->display(ch);
+    };
+    void click9(){
+        ch = 9;
+        lcdNumber_2->display(ch);
+    };
+    void click0(){
+        ch = 0;
+        lcdNumber_2->display(ch);
+    };
     void volup1(){
         if(vol >= 0 && vol <= 90) vol += 10;
         lcdNumber->display(vol);};
